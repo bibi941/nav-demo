@@ -5,33 +5,93 @@
 a {
   text-decoration: none;
 }
-kbd{
-    border: 1px solid red;
-    width: 6em;
-    height: 6em;
-    display: inline-block;
-    text-transform: uppercase;
-    vertical-align: top;
+body{
+    background: grey url(./wall2.jpg) center center ;
+    background-size: cover;
     position: relative;
+    
 }
-kbd button{
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    display: none;
+body .mask{
+    width:100%;
+    height:100%;
+    position:absolute;
+    left:0;
+    top:0;
+    z-index:-1;
+    background-color:rgba(0,0,0,0.2);
 }
-kbd:hover button{
-    display: inline-block;
+kbd {
+  border: 1px solid red;
+  width: 6em;
+  height: 6em;
+  display: inline-block;
+  text-transform: uppercase;
+  vertical-align: top;
+  position: relative;
 }
-main div:nth-child(2){
-    margin-left: 1em;
+kbd button {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: none;
 }
-main div:nth-child(3){
-    margin-left: 2em;
+kbd:hover button {
+  display: inline-block;
 }
-#main1{
-    display: inline-block;
+main div:nth-child(2) {
+  margin-left: 1em;
 }
-main{
-    text-align: center;
+main div:nth-child(3) {
+  margin-left: 2em;
+}
+#main1 {
+  display: inline-block;
+}
+main {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.key {
+  width: 71px;
+  height: 69px;
+  background: #000000;
+  border: 1px solid #373737;
+  color: rgb(255, 255, 255);
+  border-radius: 7px;
+  box-shadow: 1px 1px 4px 0px rgb(117, 117, 117),
+    2px 1px 2px 0px rgb(165, 165, 165);
+  margin-right: 13px;
+  font-family: keyboard, "Arial Rounded", Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.row {
+  margin: 13px;
+}
+.row:nth-child(2) {
+  margin-left: -35px;
+}
+.row:nth-child(3) {
+  margin-left: -80px;
+}
+.key img{
+    width: 16px;
+    height: 16px;
+}
+.key span{
+  position: absolute;
+  left: 4px;
+  top: 4px;
+}
+.key img{
+  position: absolute;
+  left: 4px;
+  bottom: 4px;
+  
 }
